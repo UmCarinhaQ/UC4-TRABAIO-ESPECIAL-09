@@ -6,32 +6,32 @@ export class Weapon implements Equippable {
     private damage: number;
     private character: Character;
 
-    public constructor(name: string, damage: number){
-        this.name = name
-        this.damage = damage
-        this.character = 
+    public constructor(name: string, damage: number, character: Character) {
+        this.name = name;
+        this.damage = damage;
+        this.character = character;
     }
-    
+
     equip(character: Character): void {
         this.character = character
     }
     unequip(character: Character): void {
-        this.character =
+        this.character = character
     }
 
-    public getname(): string{
-        return this.name 
+    public getname(): string {
+        return this.name
     }
 
-    public setname(newname: string): void{
+    public setname(newname: string): void {
         this.name = newname
     }
 
-    public getdamage(): number{
+    public getdamage(): number {
         return this.damage
     }
 
-    public setdamage(newDamage: number): void{
+    public setdamage(newDamage: number): void {
         this.damage = newDamage
     }
 
